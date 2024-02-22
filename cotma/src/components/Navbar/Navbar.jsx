@@ -31,18 +31,19 @@ const Navbar = () => {
                                 <Link to = "/">Profile</Link>
                             </li>
                             <li className='text-white'>
-                                <Link to = "/">Add/Remove</Link>
+                                <Link to = "/">Cow Profile</Link>
+                            </li>
+                            <li className='text-white'>
+                                <Link to = "/add">Worker</Link>
+                            </li>
+                            <li>
+                                <Link to = "/addc">Cow</Link>
                             </li>
                             <li className='text-white'>
                                 <Link to = "/">Status</Link>
                             </li>
                         </ul>
-                        <ul className='navbar-social flex'>
-                            <li className='text-white'>
-                                <Link to = "" className='flex flex-center'><FaTwitter /></Link>
-                            </li>
-                            
-                        </ul>
+                     
                     </div>
                 </div>
             </div>
