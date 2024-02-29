@@ -27,20 +27,29 @@ const Navbar = () => {
                 <div className={`navbar-collapse ${navToggle ? 'show-navbar-collapse' : ""}`}>
                     <div className='navbar-collapse-content'>
                         <ul className='navbar-nav'>
-                            <li className='text-white'>
-                                <Link to = "/sw">Profile</Link>
-                            </li>
-                            <li className='text-white'>
-                                <Link to = "/sc">Cow Profile</Link>
-                            </li>
-                            <li className='text-white'>
-                                <Link to = "/add">Worker</Link>
-                            </li>
-                            <li>
-                                <Link to = "/addc">Cow</Link>
-                            </li>
-                         
                             
+                            <li className='text-white'>
+                                <Link to = "/add">Add Worker</Link>
+                            </li>
+
+                            <li className='text-white'>
+                                <Link to = "/dispW">Display Workers</Link>
+                            </li>
+
+                            <li className='text-white'>
+                                <Link to = "/sw">Search Worker Profile</Link>
+                            </li>
+
+                            <li>
+                                <Link to = "/addc">Add Cow</Link>
+                            </li>
+
+                            <li className='text-white'>
+                                <Link to = "/dispC">Display Cows</Link>
+                            </li>
+                            <li className='text-white'>
+                                <Link to = "/sc">Search Cow Profile</Link>
+                            </li>                            
                         </ul>
                      
                     </div>

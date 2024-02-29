@@ -1,21 +1,23 @@
 import React from 'react';
 import "./SearchC.css";
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar';
 
-function handleSubmit(){
-  localStorage.setItem('temp', document.getElementById('searchform-cowCode'));
-}
+
 
 const SearchC = () => {
+  const navigate = useNavigate();
+  const handleSubmit = async(data) => {
+    localStorage.setItem('cowTemp', document.getElementById('searchform-cowCode').value);
+    navigate('/proc');
+  }
+
   return (
     <div class="login-page"> 
     <div class="form"> 
       <form class="login-form" onSubmit={handleSubmit}>
-        <input type="text" id = 'searchform-cowCode' placeholder="cow code"/>
-      <Link to="/proc">
+        <input type="text" id = 'searchform-cowCode' placeholder="Cow ID"/>
         <button>Search</button>
-        </Link>
         </form>
     </div>
   </div>
