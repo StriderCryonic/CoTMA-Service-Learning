@@ -12,7 +12,8 @@ const AddC = () => {
         <input type="text" placeholder="cow code"/>
         <input type="text" placeholder="age"/>   
         <input type="text" placeholder='health issues'/>
-        <input type="text" placeholder='maternity status'/>
+        <input type="text" id="preg" placeholder='maternity status'/>
+        
            
         <button>register</button>
         

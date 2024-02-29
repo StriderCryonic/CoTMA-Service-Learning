@@ -28,7 +28,7 @@ const Navbar = () => {
                     <div className='navbar-collapse-content'>
                         <ul className='navbar-nav'>
                             <li className='text-white'>
-                                <Link to = "/">Profile</Link>
+                                <Link to = "/proc">Profile</Link>
                             </li>
                             <li className='text-white'>
                                 <Link to = "/">Cow Profile</Link>
@@ -42,6 +42,7 @@ const Navbar = () => {
                             <li className='text-white'>
                                 <Link to = "/">Status</Link>
                             </li>
+                            
                         </ul>
                      
                     </div>
