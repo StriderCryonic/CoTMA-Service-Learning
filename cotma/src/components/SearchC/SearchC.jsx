@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
 function handleSubmit(){
-  var CowCode = document.getElementById('searchform-cowCode');
+  localStorage.setItem('temp', document.getElementById('searchform-cowCode'));
 }
 
 const SearchC = () => {
