@@ -1,7 +1,7 @@
 import React from "react";
-import "./ProfileC.css"
+import "./ProfileW.css"
 
-const ProfileC=() =>{
+const ProfileW=() =>{
 
 return(
     <div class="login-page">
@@ -13,4 +13,4 @@ return(
 
 }
 
-export default ProfileC;
+export default ProfileW;
