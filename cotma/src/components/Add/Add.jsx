@@ -8,7 +8,11 @@ function handleSubmit(){
     let role = document.getElementById("AddWorker-role");
     let workerAge = document.getElementById("AddWorker-age");
     let dateofJoin = document.getElementById("AddWorker-doj");
-    const newAddition =  {"workID": workerId, "Name": workerName, "Age" : workerAge, "DOJ": dateofJoin, "Role" :role};
+    const newAddition =  {"workID": workerId,
+                          "Name": workerName,
+                          "Age" : workerAge, 
+                          "DOJ": dateofJoin, 
+                          "Role" :role};
     
     //get already storedData
     let storedData = JSON.parse(localStorage.getItem('workerData'));

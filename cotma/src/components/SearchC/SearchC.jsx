@@ -3,18 +3,18 @@ import "./SearchC.css";
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
+function handleSubmit(){
+  var CowCode = document.getElementById('searchform-cowCode');
+}
+
 const SearchC = () => {
-  
   return (
-    
-    <div class="login-page">
-      
-    <div class="form">
-      
-      <form class="login-form">
-        <input type="text" placeholder="cow code"/>
-<Link to="/proc">
-        <button>search</button>
+    <div class="login-page"> 
+    <div class="form"> 
+      <form class="login-form" onSubmit={handleSubmit}>
+        <input type="text" id = 'searchform-cowCode' placeholder="cow code"/>
+      <Link to="/proc">
+        <button>Search</button>
         </Link>
         </form>
     </div>
