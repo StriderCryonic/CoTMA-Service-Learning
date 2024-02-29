@@ -28,10 +28,10 @@ const Navbar = () => {
                     <div className='navbar-collapse-content'>
                         <ul className='navbar-nav'>
                             <li className='text-white'>
-                                <Link to = "/proc">Profile</Link>
+                                <Link to = "/sw">Profile</Link>
                             </li>
                             <li className='text-white'>
-                                <Link to = "/">Cow Profile</Link>
+                                <Link to = "/sc">Cow Profile</Link>
                             </li>
                             <li className='text-white'>
                                 <Link to = "/add">Worker</Link>
@@ -39,9 +39,7 @@ const Navbar = () => {
                             <li>
                                 <Link to = "/addc">Cow</Link>
                             </li>
-                            <li className='text-white'>
-                                <Link to = "/">Status</Link>
-                            </li>
+                         
                             
                         </ul>
                      
