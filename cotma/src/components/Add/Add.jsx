@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Add.css";
 
+import {Link} from 'react-router-dom';
+
 function handleSubmit(){
     //var varname = document.getElementById("item")
     let workerName = document.getElementById("AddWorker-name");
@@ -41,7 +43,9 @@ const Add = () => {
         <input type="number" id = 'AddWorker-age' placeholder = "Age" />
         <input type="text" id = 'AddWorker-role' placeholder='role'/>
         <input type="date" id= 'AddWorker-doj'/>     
-        <button>Register</button>        
+        <Link to='/'>
+        <button>register</button>
+        </Link>       
         </form>
     </div>
   </div>

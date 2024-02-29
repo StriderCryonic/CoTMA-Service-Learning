@@ -1,6 +1,6 @@
 import React from 'react';
 import "./AddC.css";
-
+import {Link} from 'react-router-dom';
 function handleSubmit(){
   let cowId = document.getElementById("AddCow-cowId").value;
   let age = document.getElementById("AddCow-age").value;
@@ -29,7 +29,9 @@ const AddC = () => {
         <input type="text" id = 'AddCow-age' placeholder="age"/>   
         <input type="text" id = 'AddCow-sick' placeholder='health issues'/>
         <input type="text" id = 'AddCow-preg' placeholder='maternity status'/>
+        <Link to='/'>
         <button>register</button>
+        </Link>
         </form>
     </div>
   </div>
