@@ -8,7 +8,8 @@ function findDetails(){
   let storedData = JSON.parse(localStorage.getItem('cowData'));
   if (!storedData) { //if storeddata doesnt exist, error
       console.log("ERROR!!! NO DATA AVAILABLE TO SEARCH.");
-      
+      localStorage.setItem('cowData', '[]');
+      storedData = []
   }
   else{
     let matchingUser = storedData.find(cow => cow.cowId === CowCode);

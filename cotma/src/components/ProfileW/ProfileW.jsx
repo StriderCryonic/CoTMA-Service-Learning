@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom'
 function findDetails(){
   let workerCode = localStorage.getItem('workerTemp');
   let storedData = JSON.parse(localStorage.getItem('workerData'));
-  if (!storedData){
-    console.log("ERROR!");
-  }else{
+  if (!storedData) { //if storeddata doesnt exist, error
+    console.log("ERROR!!! NO DATA AVAILABLE TO SEARCH.");
+    localStorage.setItem('workerData', '[]');
+    storedData = []
+  }
+  else{
     let matchingUser = storedData.find(worker => worker.workID === workerCode);
     if (matchingUser){
       return [matchingUser.workID,matchingUser.Name, matchingUser.Age,matchingUser.DOJ, matchingUser.Role];

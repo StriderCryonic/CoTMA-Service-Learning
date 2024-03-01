@@ -5,6 +5,11 @@ import { Link } from 'react-router-dom'
 
 function findDetails(){
   let storedData = JSON.parse(localStorage.getItem('cowData'));
+  if (!storedData){
+    localStorage.setItem('cowData','[]');
+    storedData = [];
+  }
+  
   let dataArray = []
   storedData.forEach(item => {
     dataArray.push([item.cowId,item.age, item.sick,item.preg]);    
