@@ -23,7 +23,7 @@ const DisplayC=() =>{
 return(
     <div class="login-page">
     <div class="form">
-    <div id='test-2'>Cow Details</div>
+    <div id='test-2'><b>Cow Details</b></div>
     <table id = 'test'>
 		<th>ID</th><th>Age</th><th>Sick</th><th>Maternity</th>
 		{a.map((item) => (
@@ -32,6 +32,7 @@ return(
         <td>{item[1]}</td>
         <td>{item[2]}</td>
         <td>{item[3]}</td>
+        
 			</tr>
 		))
 		}	
