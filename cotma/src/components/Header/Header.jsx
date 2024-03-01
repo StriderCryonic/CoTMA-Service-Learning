@@ -10,7 +10,7 @@ const Header = () => {
         <div className='container'>
             <div className='header-content text-center flex flex-column'>
                 <h1 className='text-uppercase header-title'>CoTMA</h1>
-                <p className='text-lead'>CoTMA (Cow Tracking and Management Application)</p>
+                <p className='text-lead'>Cow Tracking and Management Application</p>
             </div>
         </div>
     </header>
