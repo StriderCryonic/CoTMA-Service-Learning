@@ -6,6 +6,8 @@ import AddC from './components/AddC/AddC';
 import ProfileC from './components/ProfileC/ProfileC';
 import SearchC from './components/SearchC/SearchC';
 import ProfileW from './components/ProfileW/ProfileW';
+import DisplayC from './components/DisplayC/DisplayC';
+import DisplayW from './components/DisplayW/DisplayW';
 
 import {
   BrowserRouter,
@@ -25,6 +27,9 @@ root.render(
       <Route path = "sc" element={<SearchC />}></Route>
       <Route path = "prow" element={<ProfileW/>}></Route>
       <Route path = "sw" element={<SearchW/>}></Route>
+      <Route path = "dispC" element={<DisplayC/>}></Route>
+      <Route path = "dispW" element={<DisplayW/>}></Route>
+      
     </Routes>
   </BrowserRouter>
 );

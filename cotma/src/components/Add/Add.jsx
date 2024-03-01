@@ -1,15 +1,17 @@
 import React from 'react';
 import "./Add.css";
+import { useNavigate } from 'react-router-dom';
 
-import {Link} from 'react-router-dom';
+const Add = () => {
+  const navigate = useNavigate();
 
-function handleSubmit(){
-    //var varname = document.getElementById("item")
-    let workerName = document.getElementById("AddWorker-name");
-    let workerId = document.getElementById("AddWorker-workerid");
-    let role = document.getElementById("AddWorker-role");
-    let workerAge = document.getElementById("AddWorker-age");
-    let dateofJoin = document.getElementById("AddWorker-doj");
+  const handleSubmit = async(data) => {
+    let workerName = document.getElementById("AddWorker-name").value;
+    let workerId = document.getElementById("AddWorker-workerid").value;
+    let role = document.getElementById("AddWorker-role").value;
+    let workerAge = document.getElementById("AddWorker-age").value;
+    let dateofJoin = document.getElementById("AddWorker-doj").value;
+
     const newAddition =  {"workID": workerId,
                           "Name": workerName,
                           "Age" : workerAge, 
@@ -19,7 +21,8 @@ function handleSubmit(){
     //get already storedData
     let storedData = JSON.parse(localStorage.getItem('workerData'));
     if (!storedData) { //if storeddata doesnt exist, create a new instance
-      storedData = [];
+      localStorage.setItem('workerData', '[]');
+      storedData = JSON.parse(localStorage.getItem('workerData'));
     }
 
     //add new data
@@ -27,11 +30,9 @@ function handleSubmit(){
 
     //push updated array
     localStorage.setItem('workerData', JSON.stringify(storedData));
+
+    navigate('/');
 }
-
-
-const Add = () => {
-
 
   return (
     <div className = "login-page">
@@ -43,9 +44,7 @@ const Add = () => {
         <input type="number" id = 'AddWorker-age' placeholder = "Age" />
         <input type="text" id = 'AddWorker-role' placeholder='role'/>
         <input type="date" id= 'AddWorker-doj'/>     
-        <Link to='/'>
-        <button>register</button>
-        </Link>       
+        <button>register</button>     
         </form>
     </div>
   </div>

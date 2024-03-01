@@ -9,9 +9,8 @@ const Header = () => {
         <Navbar />
         <div className='container'>
             <div className='header-content text-center flex flex-column'>
-                <h1 className='text-uppercase header-title'>COTMA</h1>
-                <p className='text-lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque dolore quia omnis maxime corporis deserunt neque voluptatum.</p>
-                
+                <h1 className='text-uppercase header-title'>CoTMA</h1>
+                <p className='text-lead'>CoTMA (Cow Tracking and Management Application)</p>
             </div>
         </div>
     </header>
